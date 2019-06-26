@@ -10,12 +10,12 @@ Members in collective are able to access PACER cases extracted everyday with API
 #### Daily Extraction Jobs which pulls cases the first time:
 * Runs at 5:00 AM UTC on Tue, Wed, Thu, Fri all UTC time.
 * Pulls filings for last 4 days. This is done because some cases are updated in PACER a few days after the date of filing.
-        > Ex: January 15 2019, 5:00am UTC run pulls cases filed from 2019-01-11 to 2019-01-14 
+    > Ex: January 15 2019, 5:00am UTC run pulls cases filed from 2019-01-11 to 2019-01-14 
 * Gets the docket information for only cases that were not pulled before
 #### Weekly Extraction Jobs which pulls cases the first time:
 * Runs at 5:00 AM UTC on Sat UTC time.
 * Pulls for last 2 weeks. This is done because some cases are updated in PACER sometimes upto 2 weeks after the date of filing.
-        > Ex: December 29 2018, 5am UTC run pulls cases filed from 2018-12-14 to 2018-12-28
+    > Ex: December 29 2018, 5am UTC run pulls cases filed from 2018-12-14 to 2018-12-28
 * Gets the docket information for only cases that were not pulled before. 
 
 ### 2. Job schedule to update existing cases
@@ -45,8 +45,10 @@ Refresh job for existing cases, 60 days from the date of filings
 * This link is valid for 60 mins.
 
 ### Get the full list of APIs here
-* <link 1>
-* <link 2>
+* [Get Pacer Courthouses](/developer-hub/pacer/get-pacer-courthouses)
+* [Get Case Id for Pacer Case](/developer-hub/pacer/get-case-id-for-pacer-case)
+* [Get Case Source File Paths](/developer-hub/pacer/get-case-source-file-paths)
+* [Get Cases By Last Updated Date](/developer-hub/pacer/get-cases-by-last-updated-date)
 
 ## Recommended integration methodology
 We recommend the members in the collective to fetch data from UniCourt twice a day 
